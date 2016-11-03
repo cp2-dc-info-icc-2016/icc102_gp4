@@ -1,0 +1,58 @@
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-family: arial;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(0, 107, 155);
+}
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+body{
+  background-image: url("dark-blue-gradient-light.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h2{
+  Color: gray;
+  font-size: 30px;
+  padding: 5px;
+  font-family: arial;
+}
+
+#conteudo {
+  padding: 20px;
+}
+#homepage {
+  padding-right: 100px;
+  padding-left: 100px;
+  color: rgb(0, 107, 155);
+  font-size: 20px;
+}
+
+
+</style>

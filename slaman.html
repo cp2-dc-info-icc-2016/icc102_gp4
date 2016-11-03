@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<script>
+funcionario_1 = {
+  "nome": "Edinair Moraes",
+  "cpf": "144.917.412-16",
+  "datNasc": "02/07/1960",
+  "genero": "F",
+  "cargo": "Funcionária da Assembleia",
+  "salario": 3814.12,
+  "aposentado": false
+}
+
+funcionario_2 = {
+  "nome": "Paulo Cezar Martins",
+  "cpf": "144.917.412-16",
+  "datNasc": "02/07/1985",
+  "genero": "M",
+  "cargo": "Motorista",
+  "salario": 9879.00,
+  "aposentado": false
+}
+
+function carregaFuncionario(func){
+  document.getElementById("in_name").value = func.nome;
+  document.getElementById("in_cpf").value = func.cpf;
+  document.getElementById("in_datNasc").value = func.datNasc;
+  document.getElementById("in_genero").value = func.genero;
+  document.getElementById("in_cargo").value = func.cargo;
+  document.getElementById("in_salario").value = func.salario;
+  document.getElementById("in_aposentado").value = func.aposentado;
+
+}
+</script>
+
+<style>
+table,td{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+td{
+  text-align: left;
+  padding: 5px;
+}
+</style>
+<html>
+  <head>
+    <title>JSON S2S2</title>
+  </head>
+  <body>
+  <input type="button" value="Carrega Funcionario 1" onClick="carregaFuncionario(funcionario_1)">
+  <input type="button" value="Carrega Funcionario 2" onClick="carregaFuncionario(funcionario_2)">
+  <table>
+    <tr>
+      <td>Nome</td>
+      <td><input type="text" id="in_name"></td>
+    </tr>
+    <tr>
+      <td>CPF</td>
+      <td><input type="text" id="in_cpf"></td>
+    </tr>
+    <tr>
+      <td>Data de Nascimento</td>
+      <td><input type="text" id="in_datNasc"></td>
+    </tr>
+    <tr>
+      <td>Genero</td>
+      <td><input type="text" id="in_genero"></td>
+    </tr>
+    <tr>
+      <td>Cargo</td>
+      <td><input type="text" id="in_cargo"></td>
+    </tr>
+    <tr>
+      <td>Salário</td>
+      <td><input type="text" id="in_salario"></td>
+    </tr>
+    <tr>
+      <td>Aposentado</td>
+      <td><input type="text" id="in_aposentado"></td>
+    </tr>
+    </table>
+  </body>
+</html>
