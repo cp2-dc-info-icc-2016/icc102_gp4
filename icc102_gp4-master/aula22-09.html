@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<script>
+funcionario_2 = {
+  Nome: "Rafaela Lima de Oliveira",
+  Cpf:  "123.076.987.45",
+  DatNasc:  "03/05/1990",
+  Genero:  "F",
+  Cargo:  "Gerente Administrativa",
+  Salario:  2500.00,
+  Aposentado(a):  false
+}
+
+funcionario_1 = {
+  "Nome": "Bruno Souza de Oliveira",
+  "Cpf" :  "188.063.547.55",
+  "DatNasc":  "12/04/45",
+  "Genero":  "M",
+  "Cargo":  "Secretário",
+  "Salario":  3460.00,
+  "Aposentado":   true
+}
+Function carregaFuncionario(func) {
+    document.getElementById("in_nome")
+}
+Function salvaFuncionario(func) {
+
+}
+
+alert()
+</script>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Aula 22-09-2016 </title>
+<head>
+
+<body>
+  <h1> Cadastro de Foncionários </h1>
+  <table>
+
+    <tr>
+      <td> Nome </td>
+      <td><input type="text" id="in_Nome"></td>
+    </tr>
+    <tr>
+      <td> Cpf </td>
+      <td><input type="text" id="in_Cpf"></td>
+    </tr>
+    <tr>
+      <td> Data de Nascimento </td>
+      <td><input type="text" id="in_DatNasc"></td>
+    </tr>
+    <tr>
+      <td> Gênero </td>
+      <td><input type="text" id="in_Genero"></td>
+    </tr>
+    <tr>
+      <td> Cargo </td>
+      <td><input type="text" id="in_Cargo"></td>
+    </tr>
+    <tr>
+      <td> Salário </td>
+      <td><input type="number" id="in_Salario"></td>
+    </tr>
+    <tr>
+      <td> Aposentado </td>
+      <td><input type="checkbox" id="in_Aposentado"></td>
+    </tr>
+</table>
+<div>
+<input type="button" value="funcionário 1"
+ onclick=carregaFuncionario(funcionario_1);">
+
+<input type="button" value="funcionario 2">
+
+<input type="button" value="Salvar">
+</div>
+</body>
+
+</html>

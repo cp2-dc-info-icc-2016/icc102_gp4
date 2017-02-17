@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<script>
+  pessoa ={
+    altura: 170,
+    peso: 55,
+    usaOculos: false,
+    idade: 19,
+    name: "Dylan Klebold",
+    genero: "M",
+    interesses: ["nescau","toddynho","dolly","ARMAS","AsSASINATO","NAZISMO","BULLYING"]
+  }
+  function populaHTML(){
+      var minhaDiv = document.getElementById("faustao");
+      minhaDiv.innerHTML += "Altura: " + pessoa.altura + "<br>";
+      minhaDiv.innerHTML += "Peso: " + pessoa.peso + "<br>";
+      if(pessoa.usaOculos){
+        minhaDiv.innerHTML += "Usa Oculos: Sim <br>";
+      }else{
+        minhaDiv.innerHTML += "Usa Oculos: Não <br>";
+      }
+      minhaDiv.innerHTML += "Idade: " + pessoa.idade + "<br>";
+      minhaDiv.innerHTML += "Nome: " + pessoa.name + "<br>";
+      minhaDiv.innerHTML += "Genero: " + pessoa.genero + "<br>";
+      var i = 0;
+      for(i = 0; i < pessoa.interesses.length; i++){
+        minhaDiv.innerHTML += pessoa.interesses[i] + "<br>";
+      }
+  }
+</script>
+
+<html>
+  <head>
+    <title>I LOVE MY JS</title>
+    <meta charset="ISO-8859-1">
+  </head>
+  <body>
+    <input type="button" value="PO PULA HTML" onclick="populaHTML()">
+    <p id="faustao">
+  </body>
+</html>
