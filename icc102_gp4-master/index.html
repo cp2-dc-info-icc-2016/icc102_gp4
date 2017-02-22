@@ -1,4 +1,18 @@
 <!DOCTYPE HTML>
+<script>
+  function Button() {
+    var x = document.getElementById("Botao");
+    location.href = "games.html";
+  }
+  function Button1() {
+      var x = document.getElementById("Botao");
+      location.href = "memes.html";
+    }
+  function Button2() {
+      var x = document.getElementById("Botao");
+      location.href = "noticias.html";
+    }
+</script>
 <style>
 * {
     margin: 0;
@@ -6,9 +20,6 @@
 }
 #games {
   padding: 8px;
-}
-#logo1 {
-
 }
 img {
   margin: -1px;
@@ -49,10 +60,19 @@ img {
   border-width: 5px;
   text-shadow: 2px 2px green;
 }
-.vemais {
-  text-align: center;
+#Botao{
   padding: 15px;
   font-size: 30px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #003b50;
+  cursor: pointer;
+}
+#Botao:hover{
+  background-color: #002a40;
 }
 #magrelin {
   padding-left: 14px;
@@ -83,18 +103,18 @@ img {
     </ul>
     <br>
     <br>
-    <img src="Se Atualize Logo.jpg" width=1580px id="logo1">
+    <img src="Se Atualize Logo.jpg" width=1580px>
     <br>
     <br>
     <br>
     <br>
-    <br>
-    <h1 id="welcome">... Bem-vindo ao Se Atualize ....</h1>
+    <h1 id="welcome"><marquee scrollamount="20">... Bem-vindo ao Se Atualize ...</marquee></h1>
     <br>
     <br>
     <br>
     <br>
     <h1 class="logoclass"> Games </h1>
+    <br>
     <p id="assista"><b><i> Assista aos trailers dos novos Watch Dogs 2 e Mafia 3. Quem irá concorrer ao GOTY?</i></b></p>
     <video width="700" height="450" controls id="trailer">
       <source src="Watch Dogs 2 - Trailer Oficial - E3 2016 - LEGENDADO PT-BR 360p (Video Only).mp4" type="video/mp4">
@@ -102,16 +122,20 @@ img {
     <video width="700" height="450" controls id="trailermafia3">
       <source src="MAFIA III - Trailer Legendado pt-BR 360p (Video Only).mp4">
     </video>
-    <p class="vemais"><a href="games.html"> Veja as últimas notícias sobre games... Clique aqui </a></p>
+    <center><button type="button" id="Botao" onclick="Button()">Veja as últimas notícias sobre games... Clique aqui</button></center>
+
     <h1 class="logoclass"> Memes </h1>
+
     <img src="meme1.jpg">
     <img src="meme2.jpeg" width=600px height=426px>
     <img src="meme3.jpg" width=478px height=426px>
-    <p class="vemais"><a href="memes.html"> Veja os memes mais recentes... Clique aqui </a></p>
+    <center><button type="button" id="Botao" onclick="Button1()">Veja os memes mais recentes... Clique aqui</button></center>
+
     <h1 class="logoclass"> Notícias </h1>
+
     <img src="News.jpg" width=500px height=426px>
     <img src="1280x720-data-out-143-5215758-news-images.jpg" width=600px height=426px>
     <img src="to-my-website-in-the-news-section-you-will-find-important-news-EgGTik-clipart.jpg" width=478px height=426px>
-    <p class="vemais"><a href="noticias.html"> Veja as notícias mais recentes... Clique aqui </a></p>
+    <center><button type="button" id="Botao" onclick="Button2()">Veja as notícias mais recentes... Clique aqui</button></center>
   </body>
 </html>
